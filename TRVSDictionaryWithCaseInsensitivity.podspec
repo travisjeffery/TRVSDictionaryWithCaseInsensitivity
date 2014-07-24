@@ -1,3 +1,4 @@
+# coding: utf-8
 #
 #  Be sure to run `pod spec lint TRVSDictionaryWithCaseInsensitivity.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
@@ -17,11 +18,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TRVSDictionaryWithCaseInsensitivity"
   s.version      = "0.0.1"
-  s.summary      = "Dictionary with case insensitivity."
-
-  s.description  = <<-DESC
-                   Dictionary with case insensitivity.
-                   DESC
+  s.description = s.summary = "Dictionary with case insensitivity."
 
   s.homepage     = "http://github.com/travisjeffery/TRVSDictionaryWithCaseInsensitivity"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -34,9 +31,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -47,7 +42,7 @@ Pod::Spec.new do |s|
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
-  
+
   s.author             = { "Travis Jeffery" => "tj@travisjeffery.com" }
   s.social_media_url   = "http://twitter.com/travisjeffery"
 
