@@ -16,10 +16,13 @@
 
 @implementation TRVSDictionaryWithCaseInsensitivityTests
 
-- (void)testAccessingCaseInsentive {
-  TRVSDictionaryWithCaseInsensitivity *dict = [TRVSDictionaryWithCaseInsensitivity dictionaryWithDictionary:@{ @"Name": @"Travis" }];
-
-  XCTAssertEqualObjects(@"Travis", dict[@"name"]);
+- (void)testAccessingCaseInsentiveString {
+  XCTAssertEqualObjects(@"Travis", [TRVSDictionaryWithCaseInsensitivity dictionaryWithDictionary:@{ @"Name": @"Travis" }][@"name"]);
 }
+
+- (void)testAccessingObject {
+  XCTAssertEqualObjects(@"Travis", [TRVSDictionaryWithCaseInsensitivity dictionaryWithDictionary:@{ @1: @"Travis" }][@1]);
+}
+
 
 @end
