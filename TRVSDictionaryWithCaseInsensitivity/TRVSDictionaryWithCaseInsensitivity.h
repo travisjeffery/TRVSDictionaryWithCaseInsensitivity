@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Travis Jeffery. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for TRVSDictionaryWithCaseInsensitivity.
 FOUNDATION_EXPORT double TRVSDictionaryWithCaseInsensitivityVersionNumber;
