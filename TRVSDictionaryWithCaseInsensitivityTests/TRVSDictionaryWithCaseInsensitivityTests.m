@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Travis Jeffery. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 #import "TRVSDictionaryWithCaseInsensitivity.h"
 
