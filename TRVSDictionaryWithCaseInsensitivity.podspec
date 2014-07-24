@@ -18,7 +18,11 @@ Pod::Spec.new do |s|
 
   s.name         = "TRVSDictionaryWithCaseInsensitivity"
   s.version      = "0.0.1"
-  s.description = s.summary = "Dictionary with case insensitivity."
+  s.summary = "Dictionary with case insensitivity."
+
+  s.description = <<-DESCRIPTION
+#{s.summary} e.g. [@{ @"Name": "Travis" }[@"name"] isEqualToString:"Travis"];
+DESCRIPTION
 
   s.homepage     = "http://github.com/travisjeffery/TRVSDictionaryWithCaseInsensitivity"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
