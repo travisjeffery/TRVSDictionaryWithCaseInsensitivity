@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TRVSDictionaryWithCaseInsensitivity"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary = "Dictionary with case insensitivity."
 
   s.description = <<-DESCRIPTION
@@ -70,7 +70,7 @@ DESCRIPTION
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/travisjeffery/TRVSDictionaryWithCaseInsensitivity.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/travisjeffery/TRVSDictionaryWithCaseInsensitivity.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
