@@ -24,5 +24,12 @@
   XCTAssertEqualObjects(@"Travis", [TRVSDictionaryWithCaseInsensitivity dictionaryWithDictionary:@{ @1: @"Travis" }][@1]);
 }
 
+- (void)testGettingKeyAndObject {
+  [[TRVSDictionaryWithCaseInsensitivity dictionaryWithDictionary:@{ @"Name": @"Travis" }] objectAndKeyForKey:@"name" block:^(id obj, id key) {
+    XCTAssertEqualObjects(@"Name", key);
+    XCTAssertEqualObjects(@"Travis", obj);
+  }];
+}
+
 
 @end

@@ -28,18 +28,27 @@
 }
 
 - (id)objectForKey:(id)aKey {
-  id obj = [_dict objectForKey:aKey];
-  
-  if (obj != nil || ![aKey isKindOfClass:[NSString class]])
-    return obj;
+  __block id result = nil;
+  [self objectAndKeyForKey:aKey block:^(id obj, id key) {
+    result = obj;
+  }];
+  return result;
+}
 
-  for (id key in _dict.keyEnumerator) {
-    if ([key isKindOfClass:[NSString class]] && [key caseInsensitiveCompare:aKey] == NSOrderedSame) {
-      return [_dict objectForKey:key];
-    }
+- (void)objectAndKeyForKey:(id)key block:(void (^)(id obj, id key))block {
+  id obj = [_dict objectForKey:key];
+  
+  if (obj != nil || ![key isKindOfClass:[NSString class]]) {
+    block(obj, key);
+    return;
   }
   
-  return obj;
+  for (id aKey in _dict.keyEnumerator) {
+    if ([aKey isKindOfClass:[NSString class]] && [aKey caseInsensitiveCompare:key] == NSOrderedSame) {
+      block([_dict objectForKey:aKey], aKey);
+      return;
+    }
+  }
 }
 
 @end

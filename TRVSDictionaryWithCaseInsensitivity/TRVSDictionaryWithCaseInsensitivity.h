@@ -18,5 +18,7 @@ FOUNDATION_EXPORT const unsigned char TRVSDictionaryWithCaseInsensitivityVersion
 
 @interface TRVSDictionaryWithCaseInsensitivity : NSDictionary
 
+- (void)objectAndKeyForKey:(id)key block:(void (^)(id obj, id key))block;
+
 @end
 

@@ -10,6 +10,8 @@
 		324DE60F1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 324DE60E1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		324DE6151981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324DE6091981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity.framework */; };
 		324DE61C1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324DE61B1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivityTests.m */; };
+		324DE62A1981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 324DE6291981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m */; };
+		324DE62B1981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 324DE6291981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,13 @@
 			remoteGlobalIDString = 324DE6081981B43500F5BC8E;
 			remoteInfo = TRVSDictionaryWithCaseInsensitivity;
 		};
+		324DE6271981B45C00F5BC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324DE6001981B43500F5BC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324DE6081981B43500F5BC8E;
+			remoteInfo = TRVSDictionaryWithCaseInsensitivity;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,7 @@
 		324DE6141981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRVSDictionaryWithCaseInsensitivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324DE61A1981B43500F5BC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324DE61B1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRVSDictionaryWithCaseInsensitivityTests.m; sourceTree = "<group>"; };
+		324DE6291981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDictionaryWithCaseInsensitivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				324DE60E1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity.h */,
+				324DE6291981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m */,
 				324DE60C1981B43500F5BC8E /* Supporting Files */,
 			);
 			path = TRVSDictionaryWithCaseInsensitivity;
@@ -154,6 +165,7 @@
 			dependencies = (
 				324DE6171981B43500F5BC8E /* PBXTargetDependency */,
 				324DE6261981B45C00F5BC8E /* PBXTargetDependency */,
+				324DE6281981B45C00F5BC8E /* PBXTargetDependency */,
 			);
 			name = TRVSDictionaryWithCaseInsensitivityTests;
 			productName = TRVSDictionaryWithCaseInsensitivityTests;
@@ -218,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324DE62A1981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324DE61C1981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivityTests.m in Sources */,
+				324DE62B1981BA2400F5BC8E /* TRVSDictionaryWithCaseInsensitivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +255,11 @@
 			isa = PBXTargetDependency;
 			target = 324DE6081981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity */;
 			targetProxy = 324DE6251981B45C00F5BC8E /* PBXContainerItemProxy */;
+		};
+		324DE6281981B45C00F5BC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324DE6081981B43500F5BC8E /* TRVSDictionaryWithCaseInsensitivity */;
+			targetProxy = 324DE6271981B45C00F5BC8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
